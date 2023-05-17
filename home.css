@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-hero-img {
+  width: 100vw;
+}
+.tab-hero-img {
+  display: none;
+}
+.desktop-hero-img {
+  display: none;
+}
+.header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 375px;
+}
+.art-gallery-txt {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #151515;
+}
+.header-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  margin-top: 32px;
+}
+a {
+  display: flex;
+  margin-top: 32px;
+  text-decoration: none;
+}
+.location-btn {
+  height: 72px;
+  width: 204px;
+  background: #151515;
+  font-family: "Big Shoulders Display";
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 3.63636px;
+  color: #ffffff;
+  border: none;
+}
+.arrow-div {
+  height: 72px;
+  width: 56px;
+  background: #d5966c;
+}
+.right-icon {
+  padding: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-grid-img {
+  margin-top: 120px;
+}
+.tab-grid-img {
+  display: none;
+}
+.desktop-grid-img {
+  display: none;
+}
+
+.your-day-txt {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #151515;
+  width: 343px;
+  margin-top: 25px;
+}
+.main-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  width: 343px;
+  margin-top: 21px;
+}
+
+.mobile-grid2-img {
+  margin-top: 32px;
+}
+
+.tab-grid2-img {
+  display: none;
+}
+.desktop-grid2-img {
+  display: none;
+}
+.mobile-grid3-img {
+  margin-top: 16px;
+}
+.tab-grid3-img {
+  display: none;
+}
+.desktop-grid3-img {
+  display: none;
+}
+.inspired-div {
+  height: 293px;
+  width: 343px;
+  background: #151515;
+  margin-top: 16px;
+  padding: 24px;
+}
+.inspired-txt {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 24px;
+}
+.black-box-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 24px;
+  width: 295px;
+}
+footer {
+  width: 100vw;
+  background: #151515;
+  margin-top: 120px;
+  padding: 34px;
+}
+
+.footer-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 38px;
+}
+.icons-div {
+  margin-top: 38px;
+}
+
+.instagram-icon {
+  margin-left: 20px;
+}
+.twitter-icon {
+  margin-left: 20px;
+}
+
+/* ----------------------Tablet Version------------------ */
+@media screen and (min-width: 768px) {
+  .mobile-hero-img {
+    display: none;
+  }
+  .tab-hero-img {
+    display: block;
+    position: relative;
+    right: 38%;
+  }
+  .desktop-hero-img {
+    display: none;
+  }
+  .header-div {
+    position: absolute;
+    top: 140px;
+    left: 52%;
+    display: block;
+    padding: 0;
+  }
+  .art-gallery-txt {
+    width: 285px;
+  }
+  .header-paragraph {
+    margin-top: 48px;
+    width: 339px;
+  }
+  a {
+    margin-top: 48px;
+  }
+
+  .right-icon {
+    padding: 24px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 39px;
+    padding-right: 39px;
+    column-gap: 11px;
+    row-gap: 11px;
+    min-width: 689px;
+    justify-content: center;
+  }
+  .mobile-grid-img {
+    display: none;
+  }
+  .tab-grid-img {
+    display: block;
+    grid-column: 2;
+  }
+
+  .main-txt-div {
+    grid-row: 1;
+    margin-left: 75px;
+  }
+  .your-day-txt {
+    width: 223px;
+  }
+  .main-paragraph {
+    width: 223px;
+    margin-top: 24px;
+  }
+
+  .mobile-grid2-img {
+    display: none;
+  }
+  .mobile-grid3-img {
+    display: none;
+  }
+  .tab-grid2-img {
+    display: block;
+    grid-row: 2/4;
+    max-width: 100%;
+    height: 720px;
+  }
+
+  .tab-grid3-img {
+    display: block;
+    grid-row: 2;
+    grid-column: 2;
+    height: 313px;
+    width: 398px;
+  }
+
+  .inspired-div {
+    height: 396px;
+    width: 398px;
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+    padding: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .inspired-txt {
+    margin-left: 57px;
+  }
+  .black-box-paragraph {
+    width: 223px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 216px;
+    width: 100vw;
+    margin-top: 120px;
+    padding: 55px 40px;
+  }
+
+  .footer-paragraph {
+    margin-left: 65px;
+    margin-top: 0;
+    width: 281px;
+  }
+  .icons-div {
+    margin-top: 38px;
+    margin-left: 123px;
+  }
+
+  .instagram-icon {
+    margin-left: 20px;
+  }
+  .twitter-icon {
+    margin-left: 20px;
+  }
+}
+/* ------------------------Desktop Version---------------------- */
+@media screen and (min-width: 1440px) {
+  header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tab-hero-img {
+    display: none;
+  }
+  .desktop-hero-img {
+    display: block;
+    position: relative;
+    left: 100%;
+  }
+
+  .black-box-div {
+    height: 799px;
+    width: 450px;
+    background: #151515;
+  }
+  .header-div {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    padding: 16px;
+    width: 100vw;
+    left: 143px;
+    top: 167px;
+  }
+  .paragraph-btn-div {
+    margin-left: 305px;
+  }
+  .location-btn:hover {
+    background: #d5966c;
+    cursor: pointer;
+  }
+  .arrow-div:hover {
+    background: #151515;
+    cursor: pointer;
+  }
+  .art-gallery-txt {
+    width: 456px;
+    font-size: 96px;
+    line-height: 88px;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, white 290px, black 206px);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .header-paragraph {
+    width: 350px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+  a {
+    margin-top: 64px;
+  }
+
+  main {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 180px;
+    padding-left: 165px;
+    padding-right: 164px;
+    width: 1110px;
+  }
+
+  .tab-grid-img {
+    display: none;
+  }
+  .desktop-grid-img {
+    display: block;
+  }
+  .main-txt-div {
+    margin: 0;
+  }
+  .your-day-txt {
+    font-size: 60px;
+    line-height: 60px;
+    width: 350px;
+  }
+  .main-paragraph {
+    font-size: 22px;
+    line-height: 32px;
+    width: 350px;
+    margin-top: 32px;
+  }
+
+  .tab-grid2-img {
+    display: none;
+  }
+  .desktop-grid2-img {
+    display: block;
+    grid-row: 2/4;
+    height: 100%;
+    width: 100%;
+  }
+  .tab-grid3-img {
+    display: none;
+  }
+  .desktop-grid3-img {
+    display: block;
+    min-width: 100%;
+  }
+  .inspired-div {
+    height: 377px;
+    width: 100%;
+  }
+  .inspired-txt {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    width: 350px;
+  }
+  .black-box-paragraph {
+    width: 350px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 32px;
+  }
+
+  footer {
+    height: 244px;
+    width: 100vw;
+    margin-top: 180px;
+    padding: 0;
+  }
+
+  .modern-art-img {
+    width: 159px;
+    margin-left: 165px;
+    margin-top: 80px;
+  }
+  .footer-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-left: 140px;
+    width: 430px;
+  }
+  .icons-div {
+    margin-top: 80px;
+  }
+  .facebook-icon:hover {
+    filter: invert(1%) sepia(94%) saturate(1525%) hue-rotate(300deg)
+      brightness(100%) contrast(84%);
+    cursor: pointer;
+  }
+  .instagram-icon:hover {
+    filter: invert(1%) sepia(94%) saturate(1525%) hue-rotate(300deg)
+      brightness(100%) contrast(84%);
+    cursor: pointer;
+  }
+  .twitter-icon:hover {
+    filter: invert(1%) sepia(94%) saturate(1525%) hue-rotate(300deg)
+      brightness(100%) contrast(84%);
+    cursor: pointer;
+  }
+}

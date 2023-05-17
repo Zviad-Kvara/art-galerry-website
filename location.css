@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.mobile-map-img {
+  width: 100vw;
+}
+
+a {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 72px;
+  width: 264px;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+}
+.home-html-btn {
+  height: 72px;
+  width: 208px;
+  background: #151515;
+  font-family: "Big Shoulders Display";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  color: #ffffff;
+  border: none;
+}
+.arrow-left-div {
+  height: 72px;
+  width: 56px;
+  background: #d5966c;
+  padding: 24px;
+}
+.left-arrow-img {
+}
+
+.tab-map-img {
+  display: none;
+}
+.desktop-map-img {
+  display: none;
+}
+main {
+  width: 100vw;
+  background: #151515;
+  padding: 16px;
+}
+.location-txt {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 32px;
+}
+.king-street-txt {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #d5966c;
+  margin-top: 48px;
+}
+.newport-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 20px;
+  width: 200px;
+}
+.gallery-location-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 56px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  background: #d5966c;
+  padding: 32px;
+}
+.modern-gallery-img {
+}
+.footer-paragraph {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #151515;
+  margin-top: 38px;
+}
+.icons-div {
+  margin-top: 38px;
+  margin-bottom: 48px;
+}
+.fb-icon {
+  filter: invert(0%) sepia(50%) saturate(928%) hue-rotate(82deg) brightness(0%)
+    contrast(84%);
+}
+.instagram-icon {
+  margin-left: 20px;
+  filter: invert(0%) sepia(50%) saturate(928%) hue-rotate(82deg) brightness(0%)
+    contrast(84%);
+}
+.twitter-icon {
+  margin-left: 20px;
+  filter: invert(0%) sepia(50%) saturate(928%) hue-rotate(82deg) brightness(0%)
+    contrast(84%);
+}
+/* ----------------------------------Tablet Version----------------------------- */
+@media screen and (min-width: 768px) {
+  .mobile-map-img {
+    display: none;
+  }
+  .tab-map-img {
+    display: block;
+    width: 100vw;
+  }
+  .desktop-map-img {
+    display: none;
+  }
+  a {
+    left: 38px;
+  }
+  .home-html-btn {
+  }
+  .arrow-left-div {
+  }
+  .left-arrow-img {
+  }
+
+  main {
+    width: 100vw;
+    padding: 80px 39px;
+    display: flex;
+  }
+  .king-street-div {
+    margin-left: 68px;
+  }
+  .location-txt {
+    width: 223px;
+    font-size: 55px;
+    line-height: 50px;
+  }
+  .king-street-txt {
+    margin-top: 0;
+  }
+  .newport-paragraph {
+  }
+  .gallery-location-paragraph {
+    margin-bottom: 0;
+    width: 398px;
+  }
+  footer {
+    flex-direction: row;
+    width: 100vw;
+    padding: 56px 39px;
+  }
+  .modern-gallery-img {
+  }
+  .footer-paragraph {
+    margin-top: 0;
+    width: 281px;
+    margin-left: 65px;
+  }
+  .icons-div {
+    margin: 0 0 0 125px;
+  }
+}
+/* ----------------------------------Desktop Version----------------------------- */
+@media screen and (min-width: 1440px) {
+  .tab-map-img {
+    display: none;
+  }
+  .desktop-map-img {
+    display: block;
+    width: 100vw;
+  }
+  a {
+    left: 156px;
+  }
+  .home-html-btn:hover {
+    background: #d5966c;
+    cursor: pointer;
+  }
+  .arrow-left-div:hover {
+    cursor: pointer;
+    background: #151515;
+  }
+  .left-arrow-img {
+  }
+
+  main {
+    width: 100vw;
+    padding: 104px 165px;
+  }
+  .king-street-div {
+    margin-left: 220px;
+  }
+  .location-txt {
+    width: 350px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .king-street-txt {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .newport-paragraph {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 24px;
+    width: 243px;
+  }
+  .gallery-location-paragraph {
+    font-size: 22px;
+    line-height: 32px;
+    width: 540px;
+    margin-top: 32px;
+  }
+  footer {
+    width: 100vw;
+    padding: 80px 165px;
+  }
+  .modern-gallery-img {
+    height: 58px;
+    width: 159px;
+  }
+  .footer-paragraph {
+    width: 430px;
+    margin-left: 140px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .icons-div {
+    margin: 0 0 0 273px;
+  }
+  .fb-icon:hover {
+    filter: invert(0%) sepia(17%) saturate(2%) hue-rotate(342deg)
+      brightness(111%) contrast(100%);
+    cursor: pointer;
+  }
+  .instagram-icon:hover {
+    filter: invert(0%) sepia(17%) saturate(2%) hue-rotate(342deg)
+      brightness(111%) contrast(100%);
+    cursor: pointer;
+  }
+  .twitter-icon:hover {
+    filter: invert(0%) sepia(17%) saturate(2%) hue-rotate(342deg)
+      brightness(111%) contrast(100%);
+    cursor: pointer;
+  }
+}
